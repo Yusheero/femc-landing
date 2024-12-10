@@ -4,10 +4,12 @@ import CelediaNewContent from './components/CelediaNewContent.vue';
 import CelediaOldContent from './components/CelediaOldContent.vue';
 import PawheraContent from './components/PawheraContent.vue';
 import Footer from './components/Footer.vue';
+import Navigation from './components/navigation/Navigation.vue';
 </script>
 
 <template>
   <main class="main">
+    <Navigation />
     <MainContent />
     <CelediaNewContent />
     <CelediaOldContent />

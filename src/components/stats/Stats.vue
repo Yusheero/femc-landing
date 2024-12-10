@@ -1,29 +1,31 @@
-<script setup></script>
+<script setup>
+import StatsItem from './stats-item/StatsItem.vue';
+</script>
 <template>
   <div class="stats">
-    <div class="stats__block">Users</div>
-    <div class="stats__block">Online</div>
-    <div class="stats__block">Version</div>
-    <div class="stats__block">Status</div>
-    <div class="stats__block">Status</div>
-    <div class="stats__block">Status</div>
+    <div class="stats__row">
+      <StatsItem />
+      <StatsItem />
+      <StatsItem />
+    </div>
+    <div class="stats__row">
+      <StatsItem />
+      <StatsItem />
+    </div>
   </div>
 </template>
 <style scoped lang="scss">
 @import '../../style.scss';
 
 .stats {
-  display: grid;
-  grid-template-columns: repeat(3, 180px);
-  grid-template-rows: repeat(3, 180px);
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 
-  &__block {
+  &__row {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background: #999;
-    border-radius: 8px;
+    gap: 12px;
   }
 }
 </style>
