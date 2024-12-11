@@ -1,12 +1,15 @@
 <script setup>
+import Ip from '../ip/Ip.vue';
 </script>
 <template>
-  <section id="pawhera" class="pawhera">
-    <img src="../../assets/images/pawhera-logo.png" alt="">
+  <section id="play" class="play-content">
+    <Ip />
   </section>
 </template>
 <style scoped lang="scss">
-.pawhera {
+@import '../../style.scss';
+
+.play-content {
   z-index: 1;
   height: 100vh;
   background-color: var(--main-background);

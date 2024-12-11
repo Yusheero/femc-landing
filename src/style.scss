@@ -49,6 +49,14 @@ table {
 	border-spacing: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow: hidden;
+}
+
 /** FONTS */
 @mixin geologica-500 {
   font-family: "Geologica", sans-serif;

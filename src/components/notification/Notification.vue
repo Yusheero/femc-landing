@@ -8,11 +8,12 @@
 @import '../../style.scss';
 
 .notification {
-	position: absolute;
+	z-index: 2;
+	position: fixed;
 	bottom: 16px;
 	right: 16px;
 	background: rgba(217, 217, 217, 0.50);
-	backdrop-filter: blur(8px);
+	backdrop-filter: blur(6px);
 	border-radius: 8px;
 	padding: 15px;
 	display: flex;

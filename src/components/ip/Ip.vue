@@ -17,7 +17,7 @@
   align-items: center;
   border-radius: 8px;
   background: rgba(217, 217, 217, 0.30);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
 
   &__clipboard {
     width: 18%;

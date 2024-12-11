@@ -1,11 +1,9 @@
 <script setup>
 import Stats from '../stats/Stats.vue';
 import Ip from '../ip/Ip.vue';
-import Notification from '../notification/Notification.vue';
 </script>
 <template>
-  <section class="main-content">
-    <Notification />
+  <section id="main-content" class="main-content">
     <img class="main-content__image" src="../../assets/images/main-logo.png" alt="main logo">
     <div class="main-content__info">
       <Ip />
@@ -25,7 +23,6 @@ import Notification from '../notification/Notification.vue';
   justify-content: center;
   align-items: center;
   gap: 64px;
-  position: relative;
   background-image: url('../../assets/images/background.jpg');
 
   &__info {
