@@ -1,11 +1,12 @@
 <script setup></script>
 <template>
   <div class="navigation">
-    <button class="navigation__item">1</button>
-    <button class="navigation__item">2</button>
-    <button class="navigation__item">3</button>
-    <button class="navigation__item">4</button>
-    <button class="navigation__item">5</button>
+    <button class="navigation__item"></button>
+    <button class="navigation__item"></button>
+    <button class="navigation__item"></button>
+    <button class="navigation__item"></button>
+    <button class="navigation__item"></button>
+    <button class="navigation__item"></button>
   </div>
 </template>
 <style scoped lang="scss">
@@ -18,23 +19,24 @@
   top: calc(50vh - 208px);
   background: rgba(217, 217, 217, 0.50);
   backdrop-filter: blur(8px);
-	border-radius: 16px;
+	border-radius: 8px;
 	display: flex;
   flex-direction: column;
 	justify-content: center;
 	align-items: center;
   gap: 16px;
 	@include geologica-700;
-  padding: 16px;
+  padding: 12px;
 
   &__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 64px;
-    height: 64px;
-    background-color: #C46002;
-    border-radius: 16px;
+    width: 48px;
+    height: 48px;
+    background: #A7A7A7;
+    border-radius: 8px;
+    border: none;
   }
 }
 </style>
