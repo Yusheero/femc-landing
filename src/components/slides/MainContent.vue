@@ -1,14 +1,9 @@
 <script setup>
-import Stats from '../stats/Stats.vue';
-import Ip from '../ip/Ip.vue';
 </script>
 <template>
   <section id="main-content" class="main-content">
     <img class="main-content__image" src="../../assets/images/main-logo.png" alt="main logo">
-    <div class="main-content__info">
-      <Ip />
-      <Stats />
-    </div>
+    <div class="main-content__info"></div>
   </section>
 </template>
 <style scoped lang="scss">

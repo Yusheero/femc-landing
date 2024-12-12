@@ -1,17 +1,16 @@
 <script setup>
 </script>
 <template>
-  <section id="news" class="news-content">
+  <section id="socials" class="socials-content">
     <div class="block">
-      <div class="block__title">NEWS</div>
-      <div class="block__subtitle">В разработке</div>
+      <div class="block__title">SOCIALS</div>
     </div>
   </section>
 </template>
 <style scoped lang="scss">
 @import '../../style.scss';
 
-.news-content {
+.socials-content {
   z-index: 1;
   height: 100vh;
   background-color: var(--main-background);
@@ -22,6 +21,8 @@
   gap: 64px;
   background-image: url('../../assets/images/background.jpg');
   @include geologica-700;
+  color: #fff;
+  font-size: 32px;
 }
 
 .block {

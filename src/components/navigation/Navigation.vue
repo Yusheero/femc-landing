@@ -1,12 +1,13 @@
 <script setup></script>
 <template>
   <div class="navigation">
-    <a href="#main-content" class="navigation__item"><img class="navigation__image" src="../../assets/icons/iron.png" alt=""></a>
-    <a href="#celedia-new" class="navigation__item"><img class="navigation__image" src="../../assets/icons/powder.png" alt=""></a>
-    <a href="#celedia-old" class="navigation__item"><img class="navigation__image" src="../../assets/icons/powder.png" alt=""></a>
+    <a href="#main-content" class="navigation__item"><img class="navigation__image" src="./images/femc-icon.png" alt=""></a>
+    <a href="#celedia-new" class="navigation__item"><img class="navigation__image" src="./images/celedia-new-icon.png" alt=""></a>
+    <a href="#celedia-old" class="navigation__item"><img class="navigation__image" src="./images/celedia-old-icon.png" alt=""></a>
     <a href="#pawhera" class="navigation__item"><img class="navigation__image" src="./images/pawhera-icon.png" alt=""></a>
-    <a href="#news" class="navigation__item"><img class="navigation__image" src="../../assets/icons/powder.png" alt=""></a>
-    <a href="#play" class="navigation__item"><img class="navigation__image" src="../../assets/icons/powder.png" alt=""></a>
+    <a href="#news" class="navigation__item"><img class="navigation__image" src="./images/news-icon.png" alt=""></a>
+    <a href="#play" class="navigation__item"><img class="navigation__image" src="./images/play-icon.png" alt=""></a>
+    <a href="#socials" class="navigation__item"><img class="navigation__image" src="./images/play-icon.png" alt=""></a>
   </div>
 </template>
 <style scoped lang="scss">
@@ -45,8 +46,7 @@
   }
 
   &__image {
-    width: 30px;
-    height: 25px;
+    width: 32px;
   }
 }
 </style>
