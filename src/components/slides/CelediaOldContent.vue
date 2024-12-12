@@ -6,6 +6,8 @@
   </section>
 </template>
 <style scoped lang="scss">
+@import '../../style.scss';
+
 .celedia-old {
   z-index: 1;
   height: 100vh;
@@ -15,6 +17,7 @@
   justify-content: center;
   align-items: center;
   gap: 64px;
-  background-image: url('../../assets/images/background.jpg');
+  background-image: url('../../assets/images/background3.jpg');
+  background-size: cover;
 }
 </style>

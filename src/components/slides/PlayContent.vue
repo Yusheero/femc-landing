@@ -1,9 +1,11 @@
 <script setup>
 import Ip from '../ip/Ip.vue';
+import ServersStatus from '../servers-stats/ServersStats.vue'
 </script>
 <template>
   <section id="play" class="play-content">
     <Ip />
+    <ServersStatus />
   </section>
 </template>
 <style scoped lang="scss">
