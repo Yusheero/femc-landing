@@ -3,10 +3,10 @@ import Ip from '../ip/Ip.vue';
 </script>
 <template>
   <section id="main-content" class="main-content">
-    <div class="panorama"></div>
+    <!-- <div class="panorama"></div> -->
     <img class="main-content__image" src="../../assets/images/main-logo.png" alt="main logo">
     <Ip />
-    <p class="main-content__text">Дальневосточный комплекс серверов майнкрафт, расположенный в городе Владивосток.</p>
+    <p class="main-content__text">Дальневосточный комплекс серверов майнкрафт</p>
   </section>
 </template>
 <style scoped lang="scss">
@@ -17,6 +17,7 @@ import Ip from '../ip/Ip.vue';
   z-index: 1;
   height: 100vh;
   background-color: var(--main-background);
+  background-image: url('../../assets/images/background.jpg');
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,19 +1,25 @@
-<script setup></script>
+<script setup>
+import RulesItem from './rules-item/RulesItem.vue';
+
+defineProps({
+  titles: Object,
+})
+</script>
 <template>
   <div class="server-rules">
-    <div class="server-rules__item">Item1</div>
-    <div class="server-rules__item">Item3</div>
-    <div class="server-rules__item">Item4</div>
+    <div v-for="title in titles">
+      <RulesItem :title="title" />
+    </div>
   </div>
 </template>
 <style scoped lang="scss">
 @import '../../style.scss';
 
 .server-rules {
-  background: rgba(217, 217, 217, 0.50);
-  backdrop-filter: blur(6px);
-	border-radius: 8px;
   width: 60%;
-  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
 }
 </style>

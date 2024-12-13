@@ -25,9 +25,9 @@
   flex-direction: column;
 	justify-content: center;
 	align-items: center;
-  gap: 16px;
+  gap: 8px;
 	@include geologica-700;
-  padding: 12px;
+  padding: 8px;
 
   &__item {
     display: flex;
