@@ -4,7 +4,7 @@ import Ip from '../ip/Ip.vue';
 <template>
   
   <section id="main-content" class="main-content">
-    <!-- <div class="panorama"></div> -->
+    <div class="panorama"></div>
     <img class="main-content__image" src="../../assets/images/main-logo.png" alt="main logo">
     <Ip />
     <p class="main-content__text">Дальневосточный комплекс серверов майнкрафт</p>

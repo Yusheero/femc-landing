@@ -7,31 +7,7 @@ createApp(App).mount('#app')
 import * as THREE from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 
-const versions = [
-  '1.13',
-  '1.14',
-  '1.15',
-  '1.16',
-  '1.17',
-  '1.18',
-  '1.19',
-  '1.20'
-]
-
-const searchParams = new URLSearchParams(location.search)
-const rotateSpeed = Number(searchParams.get('speed') ?? '0.3')
-const version = searchParams.get('version') ?? versions.at(-1)
-
-if (!versions.includes(version)) {
-  location.href = '/'
-}
-
-const url = new URL(location.href)
-url.searchParams.set('version', version)
-history.pushState(null, '', url)
-
-const filePath = `images/${version}`
-document.body.style.backgroundImage = `url(${filePath}/background.png)`
+const filePath = `images/panorama`
 
 const images = [
   'panorama_1',
@@ -67,7 +43,7 @@ controls.enablePan = false
 controls.enableZoom = false
 controls.autoRotate = true
 controls.enableDamping = true
-controls.autoRotateSpeed = rotateSpeed
+controls.autoRotateSpeed = 0.3
 
 function render() {
   requestAnimationFrame(render)
