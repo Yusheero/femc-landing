@@ -11,7 +11,7 @@ import SocialsBlock from './components/slides/SocialsContent.vue';
 </script>
 
 <template>
-  <main class="main">
+  <main class="main" >
     <Notification />
     <Navigation />
     <MainContent />
