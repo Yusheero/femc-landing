@@ -1,8 +1,23 @@
 <script setup>
+import ServerDoc from '../server-doc/ServerDoc.vue';
+import ServerRules from '../server-rules/ServerRules.vue';
+
+const titles = {
+  1: 'Приват',
+  2: 'Без вайпа',
+  3: 'Актуальный',
+};
 </script>
 <template>
   <section id="celedia-old" class="celedia-old">
-    <img src="../../assets/images/celedia-old-logo.png" alt="">
+    <div class="container">
+      <div class="celedia-old__header">
+        <img class="celedia-old__logo" src="../../assets/images/celedia-old-logo.png" alt="">
+        <div class="celedia-old__description">Новый проект, направленный на актуализирование мира и версии игры. Всегда последняя и доступная версия игры и минимальное количество плагинов направленных на защиту игроков</div>
+      </div>
+      <ServerRules :titles="titles" />
+      <ServerDoc />
+    </div>
   </section>
 </template>
 <style scoped lang="scss">
@@ -16,8 +31,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 64px;
   background-image: url('../../assets/images/background3.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+  }
+
+  &__logo {
+    width: 600px;
+  }
+
+  &__description {
+    width: 60%;
+    line-height: 28px;
+    color: #fff;
+    font-size: 20px;
+    @include geologica-600;
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 Текущая задача :
-build и deploy на github pages
+build и deploy на github pages!
 Настроить автодеплой
 
 Задачи :

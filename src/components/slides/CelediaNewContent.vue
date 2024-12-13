@@ -1,13 +1,22 @@
 <script setup>
 import ServerRules from '../server-rules/ServerRules.vue';
+import ServerDoc from '../server-doc/ServerDoc.vue';
 
+const titles = {
+  1: 'Приват',
+  2: 'Вайп',
+  3: 'Актуальный',
+};
 </script>
 <template>
   <section id="celedia-new" class="celedia-new">
     <div class="container">
-      <img class="celedia-new__logo" src="../../assets/images/celedia-new-logo.png" alt="">
-      <div class="celedia-new__description">Celedia - это один из наших прекрасных сверверов, где вы сможете насладиться игрой как в одиночку, так и с друзьями! Как и остальные наши сервера Celedia обладает своими уникальными особенностями и механиками, приносящими в вашу игру новый опыт и особенности!</div>
-      <ServerRules />
+      <div class="celedia-new__header">
+        <img class="celedia-new__logo" src="../../assets/images/celedia-new-logo.png" alt="">
+        <div class="celedia-new__description">Новый проект, направленный на актуализирование мира и версии игры. Вайп раз в год, без сброса инвентарей игроков. Всегда последняя и доступная версия игры и минимальное количество плагинов направленных на защиту игроков</div>
+      </div>
+      <ServerRules :titles="titles" />
+      <ServerDoc />
     </div>
   </section>
 </template>
@@ -24,12 +33,21 @@ import ServerRules from '../server-rules/ServerRules.vue';
   align-items: center;
   background-image: url('../../assets/images/background2.jpg');
 
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+  }
+
   &__logo {
-    width: 500px;
+    width: 600px;
   }
 
   &__description {
     width: 60%;
+    line-height: 28px;
     color: #fff;
     font-size: 20px;
     @include geologica-600;
