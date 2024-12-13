@@ -43,7 +43,7 @@ controls.enablePan = false
 controls.enableZoom = false
 controls.autoRotate = true
 controls.enableDamping = true
-controls.autoRotateSpeed = 0.3
+controls.autoRotateSpeed = 0.2
 
 function render() {
   requestAnimationFrame(render)

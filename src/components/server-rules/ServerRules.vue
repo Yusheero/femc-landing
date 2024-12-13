@@ -1,14 +1,15 @@
 <script setup>
 import RulesItem from './rules-item/RulesItem.vue';
 
-defineProps({
-  titles: Object,
+const props = defineProps({
+  rulesData: Object,
 })
+
 </script>
 <template>
   <div class="server-rules">
-    <div v-for="title in titles">
-      <RulesItem :title="title" />
+    <div v-for="rule in rulesData" :key="rule.id">
+      <RulesItem :title="rule.title" :image="rule.imagePath"/>
     </div>
   </div>
 </template>

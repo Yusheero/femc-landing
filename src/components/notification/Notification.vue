@@ -70,7 +70,7 @@ function removeElement() {
 			border-top-right-radius: 8px;
 			border-bottom-right-radius: 8px;
 			cursor: pointer;
-			background-color: #000000;
+			background-color: #ff6d24;
 		}
 	}
 }

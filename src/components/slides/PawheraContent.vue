@@ -2,11 +2,25 @@
 import ServerRules from '../server-rules/ServerRules.vue';
 import ServerDoc from '../server-doc/ServerDoc.vue';
 
-const titles = {
-  1: 'Анархия',
-  2: 'Без вайпа',
-  3: 'Актуальный',
-};
+const serverRulesData = {
+  data: [
+    {
+      id: 1,
+      title: 'Анархия',
+      imagePath: './src/components/server-rules/rules-item/images/swords.svg'
+    },
+    {
+      id: 2,
+      title: 'Без вайпа',
+      imagePath: './src/components/server-rules/rules-item/images/leaf.svg'
+    },
+    {
+      id: 3,
+      title: 'Актуальный',
+      imagePath: './src/components/server-rules/rules-item/images/candy.svg'
+    }
+  ]
+}
 </script>
 <template>
   <section id="pawhera" class="pawhera">
@@ -15,7 +29,7 @@ const titles = {
         <img class="pawhera__logo" src="../../assets/images/pawhera-logo.png" alt="">
         <div class="pawhera__description">На сервере действую только те правила, которые защищают стабильную работу сервера</div>
       </div>
-      <ServerRules :titles="titles" />
+      <ServerRules :rulesData="serverRulesData.data" />
       <ServerDoc />
     </div>
   </section>
