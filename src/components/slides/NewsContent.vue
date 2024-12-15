@@ -1,10 +1,11 @@
 <script setup>
+import NewsCards from '../news-cards/NewsCards.vue';
 </script>
 <template>
   <section id="news" class="news-content">
-    <div class="block">
-      <div class="block__title">NEWS</div>
-      <div class="block__subtitle">В разработке</div>
+    <div class="news-content__container">
+      <img class="news-content__logo" src="../../assets/images/news-logo.png" alt="">
+      <NewsCards />
     </div>
   </section>
 </template>
@@ -22,6 +23,20 @@
   gap: 64px;
   background-image: url('../../assets/images/background.jpg');
   @include geologica-700;
+
+  &__container {
+    width: 85%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 42px;
+  }
+
+  &__logo {
+    width: 350px;
+  }
 }
 
 .block {

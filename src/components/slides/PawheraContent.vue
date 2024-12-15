@@ -58,7 +58,7 @@ const serverRulesData = {
   }
 
   &__logo {
-    width: 600px;
+    width: 700px;
   }
 
   &__description {

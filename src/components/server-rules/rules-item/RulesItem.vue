@@ -15,7 +15,7 @@ const props = defineProps({
 
 .rules-item {
   padding: 16px;
-  background: rgba(252, 252, 252, 0.3);
+  background: #ffffff;
   backdrop-filter: blur(8px);
   border-radius: 8px;
   display: flex;
@@ -24,7 +24,7 @@ const props = defineProps({
   align-items: flex-start;
   gap: 8px;
   @include geologica-600;
-  color: #fff;
+  color: #000000;
 
   &__image {
     width: 20px;

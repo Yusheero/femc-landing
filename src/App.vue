@@ -6,7 +6,6 @@ import PawheraContent from './components/slides/PawheraContent.vue';
 import Navigation from './components/navigation/Navigation.vue';
 import Notification from './components/notification/Notification.vue';
 import NewsContent from './components/slides/NewsContent.vue';
-import PlayContent from './components/slides/PlayContent.vue';
 import SocialsBlock from './components/slides/SocialsContent.vue';
 </script>
 
@@ -16,10 +15,9 @@ import SocialsBlock from './components/slides/SocialsContent.vue';
     <Navigation />
     <MainContent />
     <CelediaNewContent />
-    <CelediaOldContent />
+    <CelediaOldContent /> 
     <PawheraContent />
     <NewsContent />
-    <PlayContent />
     <SocialsBlock />
   </main>
 </template>

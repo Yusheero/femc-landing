@@ -6,7 +6,7 @@ const setClipboard = () => {
 <template>
   <div class="ip">
     <button class="ip__clipboard" @click="setClipboard"><img src="../../assets/icons/clipboard.svg" alt=""></button>
-    <div class="ip__text">yusheero</div>
+    <div class="ip__text">95.154.67.65</div>
   </div>
 </template>
 <style scoped lang="scss">
@@ -51,9 +51,9 @@ const setClipboard = () => {
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-family: ip-font;
     font-size: 20px;
     user-select: none;
+    @include geologica-600
   }
 }
 </style>

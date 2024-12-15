@@ -2,7 +2,6 @@
 import Ip from '../ip/Ip.vue';
 </script>
 <template>
-  
   <section id="main-content" class="main-content">
     <div class="panorama"></div>
     <img class="main-content__image" src="../../assets/images/main-logo.png" alt="main logo">
@@ -36,7 +35,7 @@ import Ip from '../ip/Ip.vue';
   &__text {
     width: 30%;
     z-index: 2;
-    color: #fff;
+    color: #ffffff;
     font-size: 20px;
     @include geologica-700;
     text-align: center;

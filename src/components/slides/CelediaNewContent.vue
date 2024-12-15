@@ -22,6 +22,7 @@ const serverRulesData = {
   ]
 }
 </script>
+
 <template>
   <section id="celedia-new" class="celedia-new">
     <div class="container">
@@ -34,6 +35,7 @@ const serverRulesData = {
     </div>
   </section>
 </template>
+
 <style scoped lang="scss">
 @import '../../style.scss';
 
@@ -56,7 +58,7 @@ const serverRulesData = {
   }
 
   &__logo {
-    width: 600px;
+    width: 700px;
   }
 
   &__description {
