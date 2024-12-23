@@ -66,7 +66,7 @@ const serverRulesData = {
     line-height: 28px;
     color: #fff;
     font-size: 20px;
-    @include geologica-600;
+    @include rubik-600;
   }
 }
 </style>

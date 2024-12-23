@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
   --main-background: #E8B673;
@@ -58,18 +58,18 @@ body {
 }
 
 /** FONTS */
-@mixin geologica-500 {
-  font-family: "Geologica", sans-serif;
+@mixin rubik-500 {
+  font-family: "Rubik", serif;
   font-weight: 500;
 }
 
-@mixin geologica-600 {
-  font-family: "Geologica", sans-serif;
+@mixin rubik-600 {
+  font-family: "Rubik", serif;
   font-weight: 600;
 }
 
-@mixin geologica-700 {
-  font-family: "Geologica", sans-serif;
+@mixin rubik-700 {
+  font-family: "Rubik", serif;
   font-weight: 700;
 }
 
@@ -94,7 +94,7 @@ body {
 	align-items: center;
 	color: #ffffff;
 	background-color: #000000;
-	@include geologica-700;
+	@include rubik-700;
 
 	&:hover {
 		cursor: pointer;

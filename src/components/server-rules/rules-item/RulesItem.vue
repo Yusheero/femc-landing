@@ -23,7 +23,7 @@ const props = defineProps({
   justify-content: space-between;
   align-items: flex-start;
   gap: 8px;
-  @include geologica-600;
+  @include rubik-600;
   color: #000000;
 
   &__image {

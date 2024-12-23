@@ -1,11 +1,11 @@
 <script setup>
-import NewsCards from '../news-cards/NewsCards.vue';
+import KeenSlider from '../keen-slider/KeenSlider.vue';
 </script>
 <template>
   <section id="news" class="news-content">
     <div class="news-content__container">
       <img class="news-content__logo" src="../../assets/images/news-logo.png" alt="">
-      <NewsCards />
+      <KeenSlider />
     </div>
   </section>
 </template>
@@ -22,7 +22,7 @@ import NewsCards from '../news-cards/NewsCards.vue';
   align-items: center;
   gap: 64px;
   background-image: url('../../assets/images/background.jpg');
-  @include geologica-700;
+  @include rubik-700;
 
   &__container {
     width: 85%;
@@ -35,12 +35,13 @@ import NewsCards from '../news-cards/NewsCards.vue';
   }
 
   &__logo {
-    width: 350px;
+    width: 700px;
+    
   }
 }
 
 .block {
-  @include geologica-700;
+  @include rubik-700;
   color: #fff;
   background: rgba(217, 217, 217, 0.50);
   border-radius: 8px;

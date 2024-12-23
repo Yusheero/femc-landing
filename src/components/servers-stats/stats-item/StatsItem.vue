@@ -23,7 +23,7 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 16px;
-  @include geologica-600;
+  @include rubik-600;
   color: #fff;
 
   &__title {
@@ -33,12 +33,12 @@
   &__text-online {
     font-size: 16px;
     margin-bottom: 44px;
-    @include geologica-500;
+    @include rubik-500;
   }
 
   &__text-version {
     font-size: 16px;
-    @include geologica-500;
+    @include rubik-500;
   }
 }
 </style>

@@ -28,7 +28,7 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
-    @include geologica-600;
+    @include rubik-600;
     color: #fff;
 
     &:hover {

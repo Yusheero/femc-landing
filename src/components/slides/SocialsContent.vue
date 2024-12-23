@@ -20,13 +20,13 @@
   align-items: center;
   gap: 64px;
   background-image: url('../../assets/images/background.jpg');
-  @include geologica-700;
+  @include rubik-700;
   color: #fff;
   font-size: 32px;
 }
 
 .block {
-  @include geologica-700;
+  @include rubik-700;
   color: #fff;
   background: rgba(217, 217, 217, 0.50);
   border-radius: 8px;

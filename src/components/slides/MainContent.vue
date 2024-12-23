@@ -1,12 +1,16 @@
 <script setup>
 import Ip from '../ip/Ip.vue';
+
+const text = 'FEMC - Это сервер созданный с любовью и теплом дальнего востока, который вмещает в себя все лучшие аспекты игры, которые помогут вам получить максимально приятные ощущения от игры на нашем проекте! Мы нацелены на развитие дальневосточное комьюнити, и будем рады если вы станете частью нашей семьи! <3'
 </script>
 <template>
   <section id="main-content" class="main-content">
     <div class="panorama"></div>
-    <img class="main-content__image" src="../../assets/images/main-logo.png" alt="main logo">
-    <Ip />
-    <p class="main-content__text">Дальневосточный комплекс серверов майнкрафт</p>
+    <img class="main-content__image" src="../../assets/images/femc-logo.png" alt="main logo">
+    <div class="main-content__info">
+      <Ip />
+      <p class="main-content__text">{{ text }}</p>
+    </div>
   </section>
 </template>
 <style scoped lang="scss">
@@ -32,13 +36,25 @@ import Ip from '../ip/Ip.vue';
     object-fit: contain;
   }
 
+  &__info {
+    width: 877px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
   &__text {
-    width: 30%;
+    width: 700px;
     z-index: 2;
     color: #ffffff;
     font-size: 20px;
-    @include geologica-700;
+    @include rubik-700;
     text-align: center;
+    user-select: none;
+    line-height: 1.20;
   }
 }
 
