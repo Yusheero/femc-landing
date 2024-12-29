@@ -6,11 +6,11 @@ function removeElement() {
 </script>
 <template>
   <div id="notification" class="notification">
-			<img class="notification__image" src="./images/notification.png" alt="">
+			<img class="notification__image" src="./images/dog.png" alt="">
 			<div class="notification__text">
 				<div class="notification__header">
-					<div class="notification__title">Новая версия на серверах</div>
-					<div class="notification__date">09.01.2025</div>
+					<div class="notification__title">Новая версия!</div>
+					<div class="notification__date">01.01.2025</div>
 				</div>
 				<div class="notification__subtitle">Релиз версии 1.21.3 на всех серверах!</div>
 			</div>
@@ -22,14 +22,14 @@ function removeElement() {
 .notification {
 	z-index: 2;
 	position: fixed;
-	bottom: 16px;
+	top: 16px;
 	right: 16px;
 	border-radius: 8px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
-	gap: 8px;
-	padding: 8px;
+	gap: 16px;
+	padding: 12px;
 	@include minecraft;
 	font-size: 16px;
 	color: #fff;
@@ -37,6 +37,7 @@ function removeElement() {
 	backdrop-filter: blur(6px);
 
 	&__image {
+		border-radius: 10px;
 		width: 50px;
 		height: 50px;
 	}
@@ -50,6 +51,7 @@ function removeElement() {
 	}
 
 	&__header {
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;

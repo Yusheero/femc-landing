@@ -14,7 +14,7 @@ const serverRulesData = {
       id: 2,
       title: 'Вайп',
       text: 'Вайп карты и инвентарей раз в год',
-      imagePath: './src/components/server-rules/rules-item/images/item.png'
+      imagePath: './src/components/server-rules/rules-item/images/item2.jpg'
     },
     {
       id: 3,
@@ -61,11 +61,11 @@ const serverRulesData = {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 24px;
+    gap: 32px;
   }
 
   &__logo {
-    width: 700px;
+    width: 800px;
   }
 
   &__description {
