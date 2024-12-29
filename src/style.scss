@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@font-face { font-family: 'Minecraft'; src: local('Minecraft'), url(./assets/fonts/minecraft.ttf) }
 
 :root {
-  --main-background: #E8B673;
+  --main-background: #856945;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -73,6 +74,10 @@ body {
   font-weight: 700;
 }
 
+@mixin minecraft {
+	font-family: "Minecraft";
+}
+
 .container {
   width: 85%;
 	height: 70%;
@@ -80,7 +85,7 @@ body {
 	flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-	gap: 24px;
+	gap: 40px;
 }
 
 .button {

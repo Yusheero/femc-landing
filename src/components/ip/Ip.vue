@@ -1,11 +1,11 @@
 <script setup>
-const setClipboard = () => {
-  navigator.clipboard.writeText('95.154.67.65');
-}
+// const setClipboard = () => {
+//   navigator.clipboard.writeText('95.154.67.65');
+// }
 </script>
 <template>
   <div class="ip">
-    <button class="ip__clipboard" @click="setClipboard"><img src="../../assets/icons/frame.png" alt=""></button>
+    <!-- <button class="ip__clipboard" @click="setClipboard"><img src="../../assets/icons/frame.png" alt=""></button> -->
     <div class="ip__text">95.154.67.65</div>
   </div>
 </template>
@@ -13,14 +13,16 @@ const setClipboard = () => {
 @import '../../style.scss';
 
 .ip {
-  padding: 8px 16px;
+  padding: 0 16px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-radius: 8px;
   background: rgba(61, 61, 61, 50%);
   backdrop-filter: blur(6px);
+  height: 50px;
+  width: 230px;
 
   &__clipboard {
     box-sizing: border-box;
@@ -38,14 +40,13 @@ const setClipboard = () => {
   }
 
   &__text {
-    width: 244px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 16px;
-    @include rubik-600
+    font-size: 18px;
+    @include minecraft;
   }
 }
 </style>

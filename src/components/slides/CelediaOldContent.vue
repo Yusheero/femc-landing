@@ -1,5 +1,4 @@
 <script setup>
-import ServerDoc from '../server-doc/ServerDoc.vue';
 import ServerRules from '../server-rules/ServerRules.vue';
 
 const serverRulesData = {
@@ -31,7 +30,6 @@ const serverRulesData = {
         <div class="celedia-old__description">Новый проект, направленный на актуализирование мира и версии игры. Всегда последняя и доступная версия игры и минимальное количество плагинов направленных на защиту игроков</div>
       </div>
       <ServerRules :rulesData="serverRulesData.data" />
-      <ServerDoc />
     </div>
   </section>
 </template>

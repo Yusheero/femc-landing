@@ -15,10 +15,10 @@ import SocialsBlock from './components/slides/SocialsContent.vue';
     <Navigation />
     <MainContent />
     <CelediaNewContent />
-    <CelediaOldContent /> 
-    <PawheraContent />
-    <NewsContent />
-    <SocialsBlock />
+    <!-- <CelediaOldContent />  -->
+    <!-- <PawheraContent /> -->
+    <!-- <NewsContent /> -->
+    <!-- <SocialsBlock /> -->
   </main>
 </template>
 

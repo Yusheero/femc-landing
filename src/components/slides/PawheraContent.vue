@@ -1,6 +1,5 @@
 <script setup>
 import ServerRules from '../server-rules/ServerRules.vue';
-import ServerDoc from '../server-doc/ServerDoc.vue';
 
 const serverRulesData = {
   data: [
@@ -30,7 +29,6 @@ const serverRulesData = {
         <div class="pawhera__description">На сервере действую только те правила, которые защищают стабильную работу сервера</div>
       </div>
       <ServerRules :rulesData="serverRulesData.data" />
-      <ServerDoc />
     </div>
   </section>
 </template>

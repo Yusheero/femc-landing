@@ -9,7 +9,7 @@ const props = defineProps({
 <template>
   <div class="server-rules">
     <div v-for="rule in rulesData" :key="rule.id">
-      <RulesItem :title="rule.title" :image="rule.imagePath"/>
+      <RulesItem :title="rule.title" :text="rule.text" :image="rule.imagePath"/>
     </div>
   </div>
 </template>
@@ -21,6 +21,6 @@ const props = defineProps({
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 8px;
+  gap: 16px;
 }
 </style>

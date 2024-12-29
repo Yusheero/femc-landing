@@ -20,7 +20,6 @@ function removeElement() {
 @import '../../style.scss';
 
 .notification {
-	height: 50px;
 	z-index: 2;
 	position: fixed;
 	bottom: 16px;
@@ -29,13 +28,18 @@ function removeElement() {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 16px;
-	padding: 16px;
-	@include rubik-700;
+	gap: 8px;
+	padding: 8px;
+	@include minecraft;
 	font-size: 16px;
 	color: #fff;
 	background: rgb(61, 61, 61, 50%);
 	backdrop-filter: blur(6px);
+
+	&__image {
+		width: 50px;
+		height: 50px;
+	}
 
 	&__text {
 		display: flex;
@@ -48,22 +52,22 @@ function removeElement() {
 	&__header {
 		display: flex;
 		justify-content: space-between;
-		align-items: baseline;
+		align-items: center;
 		gap: 32px;
 	}
 
 	&__title {
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	&__date {
-		font-size: 16px;
-		@include rubik-500;
+		font-size: 10px;
+		@include minecraft;
 	}
 
 	&__subtitle {
-		font-size: 16px;
-		@include rubik-500;
+		font-size: 12px;
+		@include minecraft;
 	}
 }
 </style>
