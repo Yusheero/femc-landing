@@ -4,6 +4,9 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vite.dev/config/
 export default defineConfig({
+  build: {
+    target: 'esnext' //browsers can handle the latest ES features
+  },
   plugins: [vue()],
   resolve: {
     alias: {
